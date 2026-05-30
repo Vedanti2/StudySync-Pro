@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 StudySync Pro</h1>
+        <button id="themeBtn">🌙 Toggle Theme</button>
+    </header>
+
+    <main class="container">
+
+        <!-- Task Manager -->
+        <section class="card">
+            <h2>✅ Task Manager</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+            >
+
+            <button onclick="addTask()">Add Task</button>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <!-- Pomodoro Timer -->
+        <section class="card">
+            <h2>⏳ Pomodoro Timer</h2>
+
+            <div class="timer-box">
+                <h1 id="timer">25:00</h1>
+            </div>
+
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetTimer()">Reset</button>
+        </section>
+
+        <!-- Notes -->
+        <section class="card">
+            <h2>📝 Quick Notes</h2>
+
+            <textarea
+                id="notes"
+                rows="8"
+                placeholder="Write your notes here..."
+            ></textarea>
+
+            <button onclick="saveNotes()">Save Notes</button>
+        </section>
+
+        <!-- Progress Dashboard -->
+        <section class="card">
+            <h2>📊 Productivity Dashboard</h2>
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <h3>Total Tasks</h3>
+                    <p id="totalTasks">0</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Completed Tasks</h3>
+                    <p id="completedTasks">0</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Completion Rate</h3>
+                    <p id="completionRate">0%</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Daily Goals -->
+        <section class="card">
+            <h2>🎯 Daily Goals</h2>
+
+            <ul>
+                <li>Complete DSA Practice</li>
+                <li>Study Web Development</li>
+                <li>Revise Notes</li>
+                <li>Exercise for 30 Minutes</li>
+            </ul>
+        </section>
+
+        <!-- Study Tips -->
+        <section class="card">
+            <h2>💡 Study Tips</h2>
+
+            <p>
+                Use the Pomodoro Technique:
+                Study for 25 minutes and
+                take a 5-minute break.
+            </p>
+
+            <p>
+                Keep your tasks small and
+                achievable for better productivity.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StudySync Pro | Student Productivity Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
