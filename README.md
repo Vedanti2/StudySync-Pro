@@ -125,9 +125,7 @@ Through this project, I learned:
 * Implementing timers and productivity tools.
 * Managing application state using JavaScript.
 
-## Author
 
-Vedanti Pallawe
 
 ## License
 
